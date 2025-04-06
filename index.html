@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<form action="">
+    <div>
+        <div class="id">
+            <input type="text" name="id" id="id" placeholder="아이디" required>
+            <span>@naver.com</span>
+        </div>
+        <div class="password">
+            <input type="password" name="password" id="password" placeholder="비밀번호" required>
+        </div>
+        <div class="email">
+            <input type="text" name="email" id="email" placeholder="[선택]이메일 주소 (비밀번호 찾기 등 본인 확인용)"  required>
+        </div>
+    </div>
+    <div>
+        <div class="name">
+            <input type="text" name="name" id="name" placeholder="이름" required>
+        </div>
+        <div class="birthday">
+            <input type="text" id="birthday" name="birthday" placeholder="생년월일 8자리" required>
+        </div>
+        <div class="telecom">
+            <button type="button" clas="telecom-btn">
+                <span class="placeholder">
+                    통신사 선택
+                </span>
+            </button>
+            <ul class="telecom-list">
+                <li>
+                    <button>
+                        <span>
+                            SK
+                        </span>
+                    </button>
+                </li>
+                <li>
+                    <button>
+                        <span>
+                            KT
+                        </span>
+                    </button>
+                </li>
+                <li>
+                    <button>
+                        <span>
+                            LG U+
+                        </span>
+                    </button>
+                </li>
+                <li>
+                    <button>
+                        <span>
+                            SK 알뜰폰
+                        </span>
+                    </button>
+                </li>
+                <li>
+                    <button>
+                        <span>
+                            KT 알뜰폰
+                        </span>
+                    </button>
+                </li>
+                <li>
+                    <button>
+                        <span>
+                            LG U+ 알뜰폰
+                        </span>
+                    </button>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <ul class="gender">
+                <li class="gender1">
+                    <input type="radio" name="gender" id="gender1" value="M">
+                    <label for="gender1">남자</label>
+                </li>
+                <li class="gender2">
+                    <input type="radio" name="gender" id="gender2" value="F">
+                    <label for="gender2">여자</label>
+                </li>
+            </ul>
+            <ul class="nationality">
+                <li class="nation1">
+                    <input type="radio" name="nation" id="nation1" value="KR">
+                    <label for="natin1">내국인</label>
+                </li>
+                <li class="nation2">
+                    <input type="radio" name="nation" id="nation2" value="FR">
+                    <label for="nation2">외국인</label>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="telephone">
+        <input type="tel" name="telephone" id="telephone" placeholder="전화번호" required>
+    </div>
+    <button>submit</button>
+</form>
+</body>
+</html>
