@@ -4,30 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+
+    </style>
 </head>
 <body>
-<form action="">
-    <div>
-        <div class="id">
+<form action="" class="wrap">
+    <div class="form-border">
+        <div class="id form-item">
             <input type="text" name="id" id="id" placeholder="아이디" required>
             <span>@naver.com</span>
         </div>
-        <div class="password">
+        <div class="password form-item form-input">
             <input type="password" name="password" id="password" placeholder="비밀번호" required>
         </div>
-        <div class="email">
+        <div class="email form-item form-input" id="email">
             <input type="text" name="email" id="email" placeholder="[선택]이메일 주소 (비밀번호 찾기 등 본인 확인용)"  required>
         </div>
     </div>
-    <div>
-        <div class="name">
+    <div class="form-border">
+        <div class="name form-item form-input">
             <input type="text" name="name" id="name" placeholder="이름" required>
         </div>
-        <div class="birthday">
+        <div class="birthday form-item form-input">
             <input type="text" id="birthday" name="birthday" placeholder="생년월일 8자리" required>
         </div>
         <div class="telecom">
-            <button type="button" clas="telecom-btn">
+            <button type="button" clas="telecom-btn" onclick="">
                 <span class="placeholder">
                     통신사 선택
                 </span>
@@ -43,21 +47,14 @@
                 <li>
                     <button>
                         <span>
-                            KT
-                        </span>
-                    </button>
-                </li>
-                <li>
-                    <button>
-                        <span>
-                            LG U+
-                        </span>
-                    </button>
-                </li>
-                <li>
-                    <button>
-                        <span>
                             SK 알뜰폰
+                        </span>
+                    </button>
+                </li>
+                <li>
+                    <button>
+                        <span>
+                            KT
                         </span>
                     </button>
                 </li>
@@ -71,39 +68,52 @@
                 <li>
                     <button>
                         <span>
+                            LG U+
+                        </span>
+                    </button>
+                </li>
+                <li>
+                    <button>
+                        <span>
                             LG U+ 알뜰폰
                         </span>
                     </button>
                 </li>
             </ul>
         </div>
-        <div>
-            <ul class="gender">
-                <li class="gender1">
-                    <input type="radio" name="gender" id="gender1" value="M">
-                    <label for="gender1">남자</label>
-                </li>
-                <li class="gender2">
-                    <input type="radio" name="gender" id="gender2" value="F">
-                    <label for="gender2">여자</label>
-                </li>
-            </ul>
-            <ul class="nationality">
-                <li class="nation1">
+        <div class="radio-selection" id="radio-selection">
+            <!-- <div class="radio-list"> -->
+                <ul class="gender radio-list">
+                    <li class="gender1 radio-item">
+                        <input type="radio" name="gender" id="gender1" value="M">
+                        <label for="gender1" id="gender1" style="margin-right: -1px;">남자</label>
+                    </li>
+                    <li class="gender2 radio-item">
+                        <input type="radio" name="gender" id="gender2" value="F">
+                        <label for="gender2">여자</label>
+                    </li>
+                </ul>
+            <!-- </div> -->
+            <ul class="nationality radio-list">
+                <li class="nation1 radio-item">
                     <input type="radio" name="nation" id="nation1" value="KR">
-                    <label for="natin1">내국인</label>
+                    <label for="nation1">내국인</label>
                 </li>
-                <li class="nation2">
+                <li class="nation2 radio-item">
                     <input type="radio" name="nation" id="nation2" value="FR">
                     <label for="nation2">외국인</label>
                 </li>
             </ul>
         </div>
     </div>
-    <div class="telephone">
-        <input type="tel" name="telephone" id="telephone" placeholder="전화번호" required>
+    <div class="form-border">
+        <div class="telephone form-item" id="telephone">
+            <input type="tel" name="telephone" id="telephone" placeholder="전화번호" required>
+        </div>
     </div>
-    <button>submit</button>
+    <div class="submit-div">
+        <button class="submit-btn">인증요청</button>
+    </div>
 </form>
 </body>
 </html>
